@@ -6,14 +6,19 @@ import "./projectDisplay.css";
 const ProjectDisplay = () => {
   const { id } = useParams();
   const project = ProjectList[id];
+
   return (
     <div className="project">
-      <h1>{project.name}</h1>
+      <h2>{project.name}</h2>
       <p>
         <b>Skills:</b> {project.skills}
       </p>
-      <img src={project.image} />
-      <GitHubIcon />
+      <a href={project.webSite}>
+        <img src={project.image} />
+      </a>
+      <a href={project.github}>
+        <GitHubIcon className="a_hover" />
+      </a>
     </div>
   );
 };

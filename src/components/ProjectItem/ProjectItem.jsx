@@ -3,6 +3,7 @@ import "./projectItem.css";
 
 const ProjectItem = ({ image, name, id }) => {
   const navigate = useNavigate();
+
   return (
     <div
       className="projectItem"
@@ -10,8 +11,8 @@ const ProjectItem = ({ image, name, id }) => {
         navigate("/project/" + id);
       }}
     >
-      <div className="bgImage" style={{ backgroundImage: `url(${image})` }} />
       <h1>{name}</h1>
+      <div className="bgImage" style={{ backgroundImage: `url(${image})` }} />
     </div>
   );
 };

@@ -7,7 +7,12 @@
   background-color: #f0f0f0;
 }
 
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+p {
   padding: 0;
   margin: 0;
 }
